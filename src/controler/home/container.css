@@ -1,0 +1,109 @@
+.home-container {
+  width: 100%;
+  height: 315px;
+  padding: 0 40px;
+  position: absolute;
+  top: 120px;
+}
+.home-container:nth-child(2) {
+  top: 520px;
+}
+
+.home-container h2 {
+  color: white;
+}
+.home-container-flex-item {
+  width: 213px;
+  height: 315px;
+  border-radius: 5px;
+  box-shadow: 0 -60px 10px black inset;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.home-container-flex-item .home-container-flex-item-title {
+  color: white;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  margin: 0;
+  font-size: 15px;
+}
+.home-container-flex-item-hover-des {
+  background-color: black;
+  color: white;
+  padding: 0 5px;
+  padding-bottom: 9px;
+  padding-top: 9px;
+}
+.home-container-flex-item-hover-des h3 {
+  color: white;
+  margin: 0;
+  padding-top: 10px;
+  height: 50px;
+  text-align: center;
+}
+.home-container-flex-item-hover {
+  position: relative;
+  opacity: 0;
+  z-index: 1;
+  transition: 5s;
+}
+.home-container-flex-item:hover {
+  box-shadow: 0px 0px 5px white;
+}
+.home-container-flex-item-hover-play {
+  height: 105px;
+}
+
+.home-container-flex-item-hover:hover {
+  animation: hoveritem 0.5s forwards;
+}
+
+@keyframes hoveritem {
+  from {
+    opacity: 0;
+    filter: blur(33px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+.slick-track {
+  display: flex;
+  gap: 15px;
+}
+
+.slider-home {
+  width: 1390px;
+  overflow: hidden;
+  position: relative;
+  padding: 5px;
+}
+
+.slick-dots {
+  display: none !important;
+}
+
+.slider-home .raiting span {
+  padding: 3px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  font-size: 9px;
+  margin: 5px;
+  display: none;
+}
+.slider-home .raiting span:nth-child(1) {
+  display: block;
+}
+
+.slider-home .raiting span:nth-child(2) {
+  display: block;
+}
+.slider-home .raiting span:nth-child(3) {
+  display: block;
+}
+.slider-home .raiting {
+  height: 44px;
+}

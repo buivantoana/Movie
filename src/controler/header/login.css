@@ -1,0 +1,190 @@
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  pointer-events: none;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modalsearch {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 360px;
+  height: 555px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: white;
+  animation: open 0.5s forwards;
+  padding: 20px;
+}
+.modals {
+  width: 360px;
+  height: 555px;
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: white;
+}
+@keyframes open {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes close {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+}
+
+.close-login {
+  display: flex;
+  justify-content: flex-end;
+
+  font-size: 22px;
+  color: #6b6b6b;
+  cursor: pointer;
+}
+.close-login i:hover {
+  color: rgb(244, 61, 61);
+}
+.login-container {
+  text-align: center;
+  width: 320px;
+}
+.login-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.login-type-item {
+  width: 316px;
+  height: 45px;
+  background-color: #e9e9e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 5px;
+}
+.login-type-item i {
+  font-size: 20px;
+}
+
+.login-container span {
+  font-size: 12px;
+  display: block;
+  margin-top: 30px;
+  color: #848383;
+}
+.login-container p {
+  width: 200px;
+}
+.login-container p:first-child {
+  padding: 5px 20px;
+}
+.login-flex {
+  display: flex;
+  width: 800px;
+  justify-content: space-evenly;
+  gap: 100px;
+  transition: 0.5s;
+}
+.register-input {
+  width: 276px;
+  height: 62px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  padding: 0 20px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 60px;
+  border: 1px solid rgb(165, 163, 163);
+  display: flex;
+  align-items: end;
+  border-radius: 5px;
+}
+
+.form-control {
+  width: calc(100% - 20px);
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+.form-control:focus {
+  border-color: #007bff; /* Màu khi input được focus */
+}
+
+/* Hiệu ứng cho label khi input được focus */
+
+.form-group label {
+  position: absolute;
+  top: 20px;
+  left: 11px;
+  transition: 0.2s;
+}
+.form-control:focus + label {
+  color: rgb(28, 199, 73); /* Màu chữ khi input được focus */
+  top: 6px;
+  left: 11px;
+  font-size: 14px; /* Thu nhỏ kích thước font chữ */
+}
+
+.register button {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(28, 199, 73);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+}
+
+.login-container-hidden {
+  display: flex;
+  width: 800px;
+  justify-content: space-between;
+  gap: 100px;
+  transition: 0.5s;
+}
+.login-container-hidden-left {
+  width: 320px;
+}
+.register {
+  width: 320px;
+}

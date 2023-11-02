@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import Home from "./controler/home/Home";
+
+import { ProductList } from "./controler/productlist/ProductList";
+import ProductDetail from "./controler/productdetail/ProductDetail";
+import { Projection } from "./controler/projection/Projection";
+import { MovieSearch } from "./controler/search/MovieSearch";
+import { Home as HomeAdmin } from "./controler/admin/home/Home";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/movieall' element={<ProductList />} />
+        <Route path='/moviedetail' element={<ProductDetail />} />
+        <Route path='/projection' element={<Projection />} />
+        <Route path='/search' element={<MovieSearch />} />
+        <Route path='/homeadmin' element={<HomeAdmin />} />
+      </Routes>
     </div>
   );
 }
