@@ -1,0 +1,53 @@
+.pagination {
+  display: flex;
+  width: 945px;
+  margin: 30px auto;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  align-items: center;
+}
+.pagination li {
+  list-style: none;
+}
+.pagination li:first-child {
+  border: 1px solid gray;
+  padding: 5px;
+}
+.pagination li:last-child {
+  border: 1px solid gray;
+  padding: 5px;
+}
+.actives {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  background-color: orange;
+  border-radius: 50%;
+}
+.raitings {
+  display: flex;
+  flex-wrap: wrap;
+  height: 60px;
+}
+.raitings span {
+  height: fit-content;
+  padding: 3px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  font-size: 9px;
+  margin: 5px;
+  display: none;
+}
+.raitings span:nth-child(1) {
+  display: block;
+}
+
+.raitings span:nth-child(2) {
+  display: block;
+}
+.raitings span:nth-child(3) {
+  display: block;
+}
